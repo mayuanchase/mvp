@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './index.css'
+import './index.less'
 
 export default class Outline extends React.Component {
 
@@ -9,7 +9,6 @@ export default class Outline extends React.Component {
             <div className="outline">
                 <span>OKR 大纲</span>
             </div>
-
         );
     }
 }
