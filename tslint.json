@@ -16,6 +16,8 @@
     "ordered-imports": false,
     "object-literal-sort-keys": false,
     "no-consecutive-blank-lines": false,
-    "no-trailing-whitespace": true // 关闭trailing whitespace告警
+    "no-trailing-whitespace": true, // 关闭trailing whitespace告警
+    "isolatedModules": false,
+    "defaultSeverity": "none"
   }
 }

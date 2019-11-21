@@ -1,8 +1,6 @@
-import {Col, Row} from 'antd';
-import Calendar from "antd/es/calendar";
+import {Col, Row, Calendar} from 'antd';
 import * as React from 'react';
-import './index.less';
-import 'antd/dist/antd.css';
+import './index.scss';
 
 export default class Home extends React.Component {
 
