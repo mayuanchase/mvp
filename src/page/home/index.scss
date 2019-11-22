@@ -1,8 +1,17 @@
 .outline{
+  position: relative;
+  top: 20px;
   margin: 0 auto 0 auto;
-  background: rebeccapurple;
+  background: #FFFFFF;
   box-shadow: 0 16px 20px 0 rgba(0,0,0,0.10);
   border-radius: 4px;
   width: 480px;
   height: 540px;
+  overflow: auto;
+}
+
+#root{
+  background: crimson;
+  height: 100%;
+  width: 100%;
 }

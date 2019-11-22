@@ -1,4 +1,4 @@
-import {Col, Row, Calendar} from 'antd';
+import {Avatar, Card, List} from 'antd';
 import * as React from 'react';
 import './index.scss';
 
@@ -15,18 +15,47 @@ export default class Home extends React.Component {
     //     console.log(promise)
     // }
 
-    private onPanelChange = async (value, mode) => {
-        console.log(value, mode);
-    }
-
     public render() {
+        const data = [
+            {
+                title: 'Ant Design Title 1',
+            },
+            {
+                title: 'Ant Design Title 2',
+            },
+            {
+                title: 'Ant Design Title 3',
+            },
+            {
+                title: 'Ant Design Title 4',
+            },
+            {
+                title: 'Ant Design Title 2',
+            },
+            {
+                title: 'Ant Design Title 3',
+            },
+            {
+                title: 'Ant Design Title 4',
+            }
+        ];
         let div = (
             <div className='outline'>
-                <Row gutter={16}>
-                    <Col span={24}>
-                        <Calendar onPanelChange={this.onPanelChange}/>
-                    </Col>
-                </Row>
+                <Card title="提示信息" bordered={false} style={{ width: 480 }} >
+                    <List
+                        itemLayout="horizontal"
+                        dataSource={data}
+                        renderItem={item => (
+                            <List.Item>
+                                <List.Item.Meta
+                                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                                    title={<a href="https://ant.design">{item.title}</a>}
+                                    description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                                />
+                            </List.Item>
+                        )}
+                    />
+                </Card>
             </div>
         );
         return div;
